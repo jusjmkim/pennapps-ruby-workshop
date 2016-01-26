@@ -27,7 +27,7 @@ title: Ruby Workshop
 * `print` outputs the value and returns nil.
 * `puts` ouputs the value with a newline and returns nil.
 * I will denote output with `#=>`.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   puts 'hello world'
   #=> "hello world"
 <% end %>
@@ -41,7 +41,7 @@ title: Ruby Workshop
 # Methods
 * Parentheses around arguments can be omitted if unambiguous.
 * Methods have implicit returns.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   def hi
     'hello, there'
   end
@@ -60,7 +60,7 @@ title: Ruby Workshop
 * Just use the `class` and `end` keywords.
 * A class can be instantiated with the `new` method.
 * It is convention to write class names in PascalCase.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   class Student
   end
   student = Student.new
@@ -70,7 +70,7 @@ title: Ruby Workshop
 !SLIDE
 # Instance Methods
 * Methods defined in a class are instance methods by default.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   class Student
     def greet
       puts 'hi'
@@ -83,7 +83,7 @@ title: Ruby Workshop
 !SLIDE
 # Constructors
 * If a method is named `initialize`, then it will be executed when the class is instantiated.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   class Student
     def initialize
       puts 'hi'
@@ -97,7 +97,7 @@ title: Ruby Workshop
 * Classes can inherit from another class with the `<` operator.
 * Simply place it after the class declaration and name the class.
 * Thus, a class can gain all of its parent class's methods, both public and private.
-<% code theme: 'blackboard', line_numbers: 'off' do %>
+<% uv theme: 'blackboard', line_numbers: 'off' do %>
   class Bird
   end
   class Penguin < Bird
@@ -194,7 +194,6 @@ title: Ruby Workshop
 # Model
 * The model is the layer of the application with the crux of the logic.
 * It should be the main place where the database is accessed.
-* The classes you wrote in homeworks 2 and 3 would be in the model layer.
 * The naming convention is the singular form of the name.
 
 !SLIDE large

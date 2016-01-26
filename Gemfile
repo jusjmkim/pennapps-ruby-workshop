@@ -6,4 +6,5 @@ gem 'rake'
 
 group :development do
   gem 'slideshow'
+  gem 'ultraviolet'
 end
